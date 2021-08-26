@@ -11,13 +11,18 @@ error_reporting(E_ALL);
 ini_set('display_errors', 'on');
 session_start();
 
-if (isset($_SESSION['mess'])) {
+include_once ("m/function.php");
+
+if (isset($_SESSION['mess'])){
     echo "<p class='error-mess'>{$_SESSION['mess']['text']}</p>";
     $_SESSION['mess']['text'] = '';
 }
 
-//include_once __DIR__ . "/m/BD.php";
-//$db = new BD();
+
+if(isset($_GET['c'])){
+    $controller = $_GET['c'] ?? 'home';
+    include "c/$controller" . '.php';
+}
 
 ?>
 

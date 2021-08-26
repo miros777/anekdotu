@@ -6,7 +6,6 @@
  * Time: 18:21
  */
 
-echo "ff";
 $mess = [];
 if (isset($_POST) and !empty($_POST)) {
 
@@ -39,10 +38,6 @@ if (isset($_POST) and !empty($_POST)) {
 <form action="" method="post" class="form__addpost">
     <input type="text" name="title" value="<?= $title ?? null; ?>" placeholder="Заголовок">
 
-    <?php
-//    var_dump($category);
-//    $category = $db->query("SELECT * FROM category")->fetchAll();
-    ?>
     <select name="cat_id">
         <?php
         foreach ($category as $one) {
