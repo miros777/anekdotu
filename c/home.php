@@ -10,8 +10,6 @@ ob_start();
     $res = ob_get_clean();
 ob_get_clean();
 
-//var_dump($category);
-
 if(isset($_GET['view'])){
     $temp = $_GET['view'];
 
@@ -26,12 +24,6 @@ if(isset($_GET['view'])){
             $temp = '';
     }
 
-//    function getTemp($temp, $category){
-//    ob_get_level();
-//    ob_start();
         include "../v/$temp.php";
-//    return $category;
-//    }
-//    getTemp('home', $category);
 }
 
