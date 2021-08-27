@@ -5,8 +5,6 @@
  * Date: 25.08.2021
  * Time: 18:15
  */
-//$db = new BD();
-$category = $db->query("SELECT * FROM category")->fetchAll();
 
 switch($_GET['view'] ?? null){
     case('home'):
@@ -23,7 +21,7 @@ switch($_GET['view'] ?? null){
 $form = getElem('form', $vars = [
     'title' => $title ?? null,
     'text' => $text ?? null,
-    'category' => $category ?? null,
+    'category' => $db->query("SELECT * FROM category")->fetchAll() ?? null,
     'style' => $style ?? null
 ]);
 

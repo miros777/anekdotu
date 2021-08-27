@@ -6,29 +6,35 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/main.css">
-    <title></title>
+    <title>Admin panel</title>
 </head>
 <body>
 <header>
     <nav>
     <ul>
         <li><a href="index.php?cat_id=1&page=1&view=home&c=home">Главная</a></li>
-        <li><a href="index.php?count=all&page=1&view=category&c=category">Все анекдоты</a></li>
-        <li><a href="login.php">Админка</a></li>
+        <li><a href="index.php?page=1&view=all-posts&c=category">Все анекдоты</a></li>
+        <li><a href="index.php?view=login&c=login">Админ панель</a></li>
         <li><a href=""></a></li>
     </ul>
 </nav></header>
 
 <main>
-    <form action='' method='post' class='form__addpost'>
-    <input type='text' name='title' value='' placeholder='Заголовок'>
+    <table>
+    <tr>
+        <th>Заголовок</th>
+        <th>Анекдот</th>
+        <th>Категория</th>
+        <th>Статус</th>
+        <th>Одобрить</th>
+        <th>Удалить</th>
+    </tr>
 
-    <select name='cat_id'>";
-<option value=1>Друзья</option><option value=2>Деньги</option><option value=3>Общая</option></select>
+    <tr><td>Анекдот №1233</td><td>— Вот это зажигание, это газ, это тормоз. Вот этот рычаг ...</td><td>Друзья</td><td style='color: green'>Размещено !</td><td><a href='?view=login&c=login&public=0&id=16'>Деактивировать</a></td><td><a href='?view=login&c=login&del&id=16'>Удалить</a></td></tr><tr><td>Анекдот №1255</td><td>Молодая журналистка берёт интервью у Моисея:
+— Моисей, в...</td><td>Друзья</td><td style='color: green'>Размещено !</td><td><a href='?view=login&c=login&public=0&id=17'>Деактивировать</a></td><td><a href='?view=login&c=login&del&id=17'>Удалить</a></td></tr><tr><td>Анекдот №234</td><td>Раньше часто страдала от апатии и могла целыми днями ниче...</td><td>Друзья</td><td style='color: green'>Размещено !</td><td><a href='?view=login&c=login&public=0&id=18'>Деактивировать</a></td><td><a href='?view=login&c=login&del&id=18'>Удалить</a></td></tr><tr><td>Анекдот №111</td><td>— Что это ты не в настроении?
+— Сегодня поехали с женой ...</td><td>Друзья</td><td style='color: green'>Размещено !</td><td><a href='?view=login&c=login&public=0&id=19'>Деактивировать</a></td><td><a href='?view=login&c=login&del&id=19'>Удалить</a></td></tr><tr><td>Анекдот №111320</td><td>Талибы обещали при побивании камнями и отрубании конечнос...</td><td>Друзья</td><td style='color: green'>Размещено !</td><td><a href='?view=login&c=login&public=0&id=21'>Деактивировать</a></td><td><a href='?view=login&c=login&del&id=21'>Удалить</a></td></tr><tr><td>Смех №12355</td><td>Но потом люди начали локтями здороваться — и решение было...</td><td>Друзья</td><td style='color: green'>Размещено !</td><td><a href='?view=login&c=login&public=0&id=28'>Деактивировать</a></td><td><a href='?view=login&c=login&del&id=28'>Удалить</a></td></tr><tr><td>Анекдот №1113</td><td>У нас на работе поставили вендинговый автомат, или, как г...</td><td>Деньги</td><td style='color: green'>Размещено !</td><td><a href='?view=login&c=login&public=0&id=20'>Деактивировать</a></td><td><a href='?view=login&c=login&del&id=20'>Удалить</a></td></tr><tr><td>Анекдот №55</td><td>Жертвоприношения — лучшая иллюстрация того, что в подарке...</td><td>Деньги</td><td style='color: green'>Размещено !</td><td><a href='?view=login&c=login&public=0&id=25'>Деактивировать</a></td><td><a href='?view=login&c=login&del&id=25'>Удалить</a></td></tr><tr><td>Смех №123</td><td>Когда ВОЗ порекомендовала чихать в локоть, коронавирус на...</td><td>Деньги</td><td style='color: green'>Размещено !</td><td><a href='?view=login&c=login&public=0&id=27'>Деактивировать</a></td><td><a href='?view=login&c=login&del&id=27'>Удалить</a></td></tr><tr><td>Тест общая</td><td>Гинеколог заходит в кабинет, где его ожидает пациентка.
+...</td><td>Общая</td><td style='color: green'>Размещено !</td><td><a href='?view=login&c=login&public=0&id=30'>Деактивировать</a></td><td><a href='?view=login&c=login&del&id=30'>Удалить</a></td></tr></table>
 
-    <textarea name='text' cols='30' rows='10' placeholder='Введите текст анекдота'></textarea>
-    <input type='submit' value='Отправить'>
-</form>
 </main>
 
 <footer>

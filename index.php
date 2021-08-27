@@ -16,7 +16,6 @@ if (isset($_SESSION['mess'])) {
 $controller = $_GET['c'] ?? 'home';
 include_once("c/$controller.php");
 
-
 $topMenu = getElem('top-menu', $vars = []);
 $footer = getElem('footer', $vars = []);
 
@@ -27,11 +26,11 @@ echo getTemp('root', $vars = [
     'title' => $titlePage ?? null
 ]);
 
-//file_put_contents('test', getTemp('root', $vars = [
-//    'topMenu' => $topMenu,
-//    'content' => $mainContent ?? null,
-//    'footer' => $footer ?? null,
-//    'title' => $title2 ?? null
-//]));
+file_put_contents('test', getTemp('root', $vars = [
+    'topMenu' => $topMenu,
+    'content' => $mainContent ?? null,
+    'footer' => $footer ?? null,
+    'title' => $titlePage ?? null
+]));
 
 

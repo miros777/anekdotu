@@ -1,5 +1,4 @@
 <h2>Категории</h2>
-
 <?
 
 //menu category
@@ -25,7 +24,7 @@ if ($pagination > 0) {
     for ($i = 1; $i <= $pagination; $i++) { ?>
 
         <li>
-            <a href="<?php echo "?cat_id={$_GET['cat_id']}&page=$i&view=category&c=category"; ?>"<?php if ($i == $_GET['page']) {
+            <a href="<?php echo "?page=$i&view=all-posts&c=category"; ?>"<?php if ($i == $_GET['page']) {
                 echo "class='active'";
             } ?>><?php echo $i; ?>
             </a>
