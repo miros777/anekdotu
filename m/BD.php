@@ -12,7 +12,7 @@
 class BD
 {
     //    BD connect
-    protected $connection;
+    public $connection;
     protected $query;
     protected $show_errors = TRUE;
     protected $query_closed = TRUE;
