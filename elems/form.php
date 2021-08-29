@@ -1,4 +1,3 @@
-<h2>У вас есть возможность добавить авторский анетдот</h2>
 <form action='' method='post' class='form__addpost' <?= $style ?>>
 
     <div class="form-group">
