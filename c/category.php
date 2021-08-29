@@ -6,7 +6,7 @@
  * Time: 12:38
  */
 
-$db = new BD();
+$db = new m\BD\BD();
 
 //  menu category
 $allCategory = $db->query("SELECT * FROM category")->fetchAll();

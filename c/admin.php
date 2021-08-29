@@ -6,7 +6,7 @@
  * Time: 18:15
  */
 
-$db = new BD();
+$db = new m\BD\BD();
 
 //authorization
 if(authCheck() == false){

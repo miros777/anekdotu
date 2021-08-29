@@ -24,11 +24,4 @@ echo getTemp('root', $vars = [
     'title' => $titlePage ?? null
 ]);
 
-//file_put_contents('test', getTemp('root', $vars = [
-//    'topMenu' => $topMenu,
-//    'content' => $mainContent ?? null,
-//    'footer' => $footer ?? null,
-//    'title' => $titlePage ?? null
-//]));
-
 

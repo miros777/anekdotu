@@ -6,8 +6,7 @@
  * Time: 13:39
  */
 
-//namespace m\BD;
-
+namespace m\BD;
 
 class BD
 {
@@ -19,7 +18,7 @@ class BD
     public $query_count = 0;
 
     public function __construct($host = 'localhost', $user = 'root', $password = '', $bdName = 'anekdotu', $charset = 'utf8') {
-        $this->connection = new mysqli($host, $user, $password, $bdName);
+        $this->connection = new \mysqli($host, $user, $password, $bdName);
         if ($this->connection->connect_error) {
             $this->error('Failed to connect to MySQL - ' . $this->connection->connect_error);
         }

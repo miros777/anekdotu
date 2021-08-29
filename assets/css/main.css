@@ -35,6 +35,10 @@ form.form__addpost textarea{
     border: 1px solid grey;
     font-size: 16px;
     box-sizing: border-box;
+    width: 100%;
+}
+form .form-group lable{
+    margin-top: 20px;
 }
 h2{
     text-align: center;
@@ -72,7 +76,10 @@ h2{
 .error-mess{
     color: red;
 }
-
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
 /*Admin panel*/
 table {
     border-collapse: collapse;

@@ -5,7 +5,7 @@
  * Date: 25.08.2021
  * Time: 18:15
  */
-$db = new BD();
+$db = new m\BD\BD();
 
 switch($_GET['view'] ?? null){
     case('home'):
@@ -34,7 +34,6 @@ $titlePage = 'Home page';
 
 $mess = [];
 if (isset($_POST) and !empty($_POST)) {
-    var_dump($_POST);
 
     $text = mysqli_real_escape_string($db->connection, $_POST['text']);
     $title = mysqli_real_escape_string($db->connection, $_POST['title']);
