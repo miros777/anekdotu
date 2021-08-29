@@ -5,6 +5,7 @@
  * Date: 25.08.2021
  * Time: 18:15
  */
+$db = new BD();
 
 switch($_GET['view'] ?? null){
     case('home'):

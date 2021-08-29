@@ -6,6 +6,8 @@
  * Time: 12:38
  */
 
+$db = new BD();
+
 //  menu category
 $allCategory = $db->query("SELECT * FROM category")->fetchAll();
 
@@ -25,7 +27,7 @@ foreach ($allCategory as $cat) {
 //all posts
 
 if (isset($_GET['page'])) {
-    $count_post = 3;
+    $count_post = 4;
     $page_num = $_GET['page'];
     $max = $page_num * $count_post;
     $min = $max - $count_post;

@@ -6,8 +6,6 @@ session_start();
 include_once "m/BD.php";
 include_once("m/function.php");
 
-$db = new BD();
-
 if (isset($_SESSION['mess'])) {
     echo "<p class='error-mess'>{$_SESSION['mess']['text']}</p>";
     $_SESSION['mess']['text'] = '';
@@ -26,11 +24,11 @@ echo getTemp('root', $vars = [
     'title' => $titlePage ?? null
 ]);
 
-file_put_contents('test', getTemp('root', $vars = [
-    'topMenu' => $topMenu,
-    'content' => $mainContent ?? null,
-    'footer' => $footer ?? null,
-    'title' => $titlePage ?? null
-]));
+//file_put_contents('test', getTemp('root', $vars = [
+//    'topMenu' => $topMenu,
+//    'content' => $mainContent ?? null,
+//    'footer' => $footer ?? null,
+//    'title' => $titlePage ?? null
+//]));
 
 

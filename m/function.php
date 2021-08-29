@@ -19,6 +19,14 @@ function getElem($filename, $vars = []){
     extract($vars);
 
     ob_start();
-    include ("elems/$filename.php");
+        include ("elems/$filename.php");
     return ob_get_clean();
+}
+
+function authCheck(){
+    if(isset($_SESSION['auth']) and $_SESSION['auth'] == true){
+        return $authStatus = true;
+    } else{
+        return $authStatus = false;
+    }
 }
